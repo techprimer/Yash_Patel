@@ -1,0 +1,442 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+html {
+  scroll-behavior: smooth ;
+  overflow-y:scroll;
+
+}
+.circle::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#f00, #f0f);
+  clip-path: circle(15% at right 70%);
+    
+  }
+.circle::after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background:linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(15% at left 30%);
+    
+  }
+
+.navbar
+{
+  background-color: black;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+.navbar-brand
+{
+  margin-left: 9%;
+}
+
+.navbar-brand img
+{
+  width: 25%;
+  height: 20%;
+}
+.collapse ul
+{
+  margin-left: 5%;
+  width: 100%;
+  z-index: 10;
+
+}
+.collapse ul li{
+  margin-left: 35px;
+  
+}
+.collapse ul li:hover {
+  background-color: #03e9f4;
+
+}
+
+.collapse ul li a
+{
+  
+  width: 100%;
+  font-size: 15px;
+
+}
+/*Home content css*/
+.Home-content{
+    position: relative;
+    height: 650px;
+    width: 100%;
+    margin-top:55px;
+    background: black;
+    color: white;
+    display: flex;
+    clip-path: polygon(0 0 , 100% 0 ,100% 100%, 70% 87%, 0 100%);
+    
+    
+}
+.Home-content .Name
+{ 
+    position: relative;
+   
+    margin-top: 150px;
+    color: #2EEBEB;
+    font-size: 25px;
+    left: 10%;
+      
+}
+.Home-content .Name .Dev-1
+{
+    color: white;
+    font-size: 50px;
+}
+.Home-content .Name .Dev-2{
+    color: #2EEBEB;
+    font-size: 50px;
+}
+.Home-content .Self-image img{
+  
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top: 125px;
+    margin-right: 50px;
+    
+
+}
+
+
+.About{
+    margin-top: 10px;
+}
+.About .heading{
+    
+    color: black;
+    font-weight: bold;
+   
+}
+.underline
+{
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  margin-left:-50px;
+  background-color: #2EEBEB;
+  display: inline-block;
+}
+.about-myself
+{
+
+  font-size: 20px;
+  line-height: 2;
+}
+.card
+{
+  display: inline-block;
+  margin-left: 18%;
+  margin-right: 18%;
+  border-width: 1px;
+  border-radius: 20px 20px 20px 20px;
+  width: 60%;
+  height: auto;
+  box-shadow: 5px 5px #26262626;
+  
+
+
+}
+.card .image{
+  opacity: 0.8;
+  width: 300px;
+  height: 300px;
+  padding: 20px 20px 20px 20px;
+  justify-content: start;
+  border-radius: 80px 0px 80px 0px; 
+  
+}
+.card .text-card
+{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.card .about-myself{
+  width: 100%;
+  padding: 30px 30px 30px 30px;
+
+}
+.Projects{
+  position: relative;
+  height: auto;
+}
+.pro-card,.pro-card3{
+  
+  margin-left: 7%;
+  display: flex;
+  border-radius: 20px 20px 20px 20px; 
+  width: 55%;
+  height: auto;
+  justify-content: space-between;
+  background: #B6FAE7;
+
+}
+.pro-card2,.pro-card4
+{ 
+  margin-left: 37%;
+  display: flex;
+  border-radius: 20px 20px 20px 20px; 
+  width: 55%;
+  height: auto;
+  justify-content: space-between;
+  background: #9EE3F2;
+
+}
+
+
+.project-desc
+{
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 50%;
+}
+.project-desc a{
+  color: black;
+  text-decoration: none;
+}
+.pro-image img{
+  float: right;
+  width:350px;
+  height: 300px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.WID-div
+{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.WID-div1
+{
+  width: 25%;
+  height: 400px;
+
+  border: 1px solid #ECECEC;
+  border-radius: 20px 20px 20px 20px;
+}
+.WID-div1 img{
+  margin-top: 5px;
+  height: 150px;
+  width: 150px;
+}
+.WID-div2
+{
+   width: 25%;
+  height: 400px;
+  border: 1px solid #ECECEC;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.WID-div2 img{
+  height: 150px;
+  width: 150px;
+}
+.WID-div1:hover, .WID-div2:hover{
+  background-color: #ECECEC;
+  
+  transition: 0.8s ease;
+}
+.Contacts{
+  background-color: #262626;
+  color: white;
+  height: 150px;
+}
+hr{
+  background-color:  #2EEBEB;
+  height: 3px;
+  width: 100px;
+
+}
+.Contact
+{
+
+  background-color: #262626;
+  display:inline-block;
+  color: white;
+  width: 100%;
+
+}
+.email{
+  position: relative;
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+}
+.Scoial-media-acc
+{
+  display: flex;
+  float: right;
+  list-style: none;
+  width: 50%;
+
+
+}
+
+.Scoial-media-acc li a{
+  text-decoration: none;
+  color: white;
+
+}
+.Scoial-media-acc li a:hover{
+  color: #03e9f4;
+}
+.Skills-div{
+  display: flex;
+  justify-content: center;
+}
+.Skills-1
+{
+  width: 100px;
+  background: #71A0F7;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+  height: auto;
+  margin-top: 5px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px #262626  
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .Home-content .Name .Dev-1{
+      font-size: 30px;
+
+    }
+    .Home-content .Name .Dev-2{
+      font-size: 35px;
+
+    }
+    .Home-content .Self-image img{
+    
+    width: 180px;
+    margin-top: -100px;
+    margin-left: 50px;
+    height: 180px;
+    
+
+}
+
+.card .image
+{
+  width: 200px;
+  height: 180px;
+}
+.about-myself
+{
+
+  font-size: 10px;
+}
+.card
+{
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.pro-card,.pro-card2,.pro-card3,.pro-card4{
+      width: 100%;
+      margin-left: 0;
+}
+.project-desc
+{
+  width: 100%;
+}
+.project-desc p{
+  font-size: 10px;
+}
+.project-desc a{
+  color: black;
+  text-decoration: none;
+  font-size: 10px;
+}
+.pro-image img{
+  height: 80px;
+  width: 80px;
+  float: right;
+  margin-top: -30px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+
+}
+
+.Skills-1
+{
+ 
+  font-size: 10px;
+  margin-top: 5px;
+   
+}
+.WID-div1,.WID-div2
+{
+  width: 100%;
+  height: auto;
+}
+
+.email,.Scoial-media-acc
+{
+  width: 100%;
+
+}
+.Contacts
+{
+  height: auto;
+}
+.Scoial-media-acc li a,.email{
+  font-size: 10px;
+}
+.navbar-brand img
+{
+width: 50%;
+  height: 50%;
+}
+.circle::before{
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#f00, #f0f);
+  clip-path: circle(15% at right 70%);
+    
+  }
+.circle::after{
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background:linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(15% at left 30%);
+    
+  }
+}
